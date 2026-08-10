@@ -301,22 +301,24 @@ p{ margin:0; }
 .pc-features li::before{ content:'▸'; color: var(--signal); }
 .pc-actions{ display:flex; gap:12px; margin-top:auto; padding-top: 10px; flex-wrap: wrap; }
 
-/* ============ BADGES ============ */
-.badges-row{ display:flex; gap:20px; flex-wrap:wrap; }
-.badge-card{
-  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 26px; display:flex; align-items:center; gap:18px; flex:1; min-width: 260px;
+/* ============ CERTIFICATIONS ============ */
+.cert-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px; }
+.cert-card{
+  background: linear-gradient(160deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px; display:flex; flex-direction:column; gap:18px;
   transform-style: preserve-3d; transition: border-color .3s, box-shadow .3s;
 }
-.badge-card:hover{ border-color: var(--amber); box-shadow: 0 14px 34px -14px rgba(255,180,84,.28); }
-.badge-icon{
+.cert-card:hover{ border-color: var(--amber); box-shadow: 0 14px 34px -14px rgba(255,180,84,.28); }
+.cert-icon{
   width:52px; height:52px; border-radius:12px; flex-shrink:0;
   display:flex; align-items:center; justify-content:center;
   font-family: var(--font-mono); font-weight:700; font-size:.8rem;
   background: linear-gradient(160deg, var(--amber-dim), transparent); color: var(--amber);
   border: 1px solid rgba(255,180,84,.3);
 }
-.badge-card h3{ font-size: 1.05rem; margin-bottom:4px; }
+.cert-body h3{ font-size: 1.05rem; margin-bottom:4px; }
+.cert-card .btn{ align-self:flex-start; margin-top:auto; }
 .mono-tag{ font-family: var(--font-mono); font-size:.75rem; color: var(--text-dim); }
 
 /* ============ EDUCATION (simple) ============ */
