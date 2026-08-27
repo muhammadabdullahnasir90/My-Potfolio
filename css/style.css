@@ -243,6 +243,17 @@ p{ margin:0; }
 .fact-k{ font-family: var(--font-mono); font-size:.72rem; color: var(--signal); text-transform:uppercase; letter-spacing:.5px; }
 .fact-v{ font-size:.92rem; color: var(--text); }
 
+/* ============ EXPERIENCE ============ */
+.experience-card{
+  background: linear-gradient(160deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 32px; max-width: 780px; display:flex; flex-direction:column; gap:18px;
+}
+.exp-header{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; }
+.exp-header h3{ font-size: 1.2rem; margin-bottom: 4px; }
+.exp-company{ color: var(--signal); font-size:.92rem; font-weight:600; }
+.exp-date{ font-family: var(--font-mono); font-size:.75rem; color: var(--text-dim); white-space:nowrap; }
+
 /* ============ SKILLS ============ */
 .skills-grid{ display:block; }
 .skills-row{
